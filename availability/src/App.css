@@ -1,0 +1,111 @@
+import React, { useState } from 'react';
+import './AvailabilityForm.css'; // Import the external CSS file
+
+const AvailabilityForm = () => {
+  const [availability, setAvailability] = useState({
+    monday: [{ start: '', end: '' }],
+    tuesday: [{ start: '', end: '' }],
+    wednesday: [{ start: '', end: '' }],
+    thursday: [{ start: '', end: '' }],
+    friday: [{ start: '', end: '' }],
+    saturday: [{ start: '', end: '' }],
+    sunday: [{ start: '', end: '' }],
+  });
+
+  const handleTimeChange = (day, index, field, value) => {
+    setAvailability((prevAvailability) => ({
+      ...prevAvailability,
+      [day]: prevAvailability[day].map((slot, idx) =>
+        idx === index ? { ...slot, [field]: value } : slot
+      ),
+    }));
+  };
+
+  const addTimeSlot = (day) => {
+    setAvailability((prevAvailability) => ({
+      ...prevAvailability,
+      [day]: [...prevAvailability[day], { start: '', end: '' }],
+    }));
+  };
+
+  const removeTimeSlot = (day, index) => {
+    setAvailability((prevAvailability) => ({
+      ...prevAvailability,
+      [day]: prevAvailability[day].filter((_, idx) => idx !== index),
+    }));
+  };
+
+  // Apply Monday's availability to all other days
+  const applyToAllDays = () => {
+    const { monday } = availability;
+    setAvailability({
+      monday,
+      tuesday: [...monday],
+      wednesday: [...monday],
+      thursday: [...monday],
+      friday: [...monday],
+      saturday: [...monday],
+      sunday: [...monday],
+    });
+  };
+
+  const saveAvailability = () => {
+    console.log('Availability Saved:', availability);
+    alert('Availability saved successfully!');
+  };
+
+  return (
+    <div className="availability-form line-wise-layout">
+      <h2>Set Your Business Hours</h2>
+      <div className="availability-days">
+        {Object.keys(availability).map((day) => (
+          <div className="day-row" key={day}>
+            <label className="day-label">{day.charAt(0).toUpperCase() + day.slice(1)}</label>
+            {availability[day].map((slot, index) => (
+              <div key={index} className="time-slot">
+                <input
+                  type="time"
+                  value={slot.start}
+                  onChange={(e) => handleTimeChange(day, index, 'start', e.target.value)}
+                  className="time-input"
+                />
+                <span className="to-label">to</span>
+                <input
+                  type="time"
+                  value={slot.end}
+                  onChange={(e) => handleTimeChange(day, index, 'end', e.target.value)}
+                  className="time-input"
+                />
+                {availability[day].length > 1 && (
+                  <button
+                    type="button"
+                    className="remove-slot-btn"
+                    onClick={() => removeTimeSlot(day, index)}
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
+            ))}
+            {/* Fixed Add hours button */}
+            <button type="button" className="add-slot-btn" onClick={() => addTimeSlot(day)}>
+              + Add hours
+            </button>
+          </div>
+        ))}
+      </div>
+      
+      <div className="button-container">
+        <button className="apply-btn" onClick={applyToAllDays}>
+          Apply to All Days
+        </button>
+
+        <button className="save-btn" onClick={saveAvailability}>
+          Save Availability
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default AvailabilityForm;

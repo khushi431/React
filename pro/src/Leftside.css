@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: stretch; /* Make both sides stretch to the same height */
+    height: 100vh; /* Full height of the viewport */
+    padding-top: 40px; /* Add space from the top of the viewport */
+  }
+  
+  .left-side, .right-side {
+    width: 40%; /* Equal width for both sides */
+    padding: 40px; /* Equal padding */
+    box-sizing: border-box;
+    margin: 0 20px; /* Equal spacing between left and right sides */
+    border-radius: 20px; /* Rounded corners for both sides */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Equal shadow for depth */
+    font-family: 'Poppins', sans-serif; /* Clean, modern font */
+    color: #333; /* Dark gray text for readability */
+    line-height: 1.6; /* Equal line spacing for readability */
+    text-align: left; /* Left-align the text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    height: auto; /* Auto height to fit content */
+  }
+  
+  /* Gradient backgrounds for both sections */
+  .left-side {
+    background: linear-gradient(145deg, #ffe7d1, #ffafbd); /* Soft pink-orange gradient */
+  }
+  
+  .right-side {
+    background: linear-gradient(145deg, #d4fc79, #96e6a1); /* Soft green gradient */
+  }
+  
+  /* Hover effect: Zoom-in when hovered */
+  .left-side:hover, .right-side:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow when hovered */
+  }
+  
+  /* Heading styles for both sides */
+  .left-side h2, .right-side h2 {
+    font-size: 30px; /* Same heading size */
+    margin-bottom: 20px; /* Equal spacing under headings */
+    color: #ff6f61; /* Coral pink for both headings */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1.5px; /* Add spacing between heading letters */
+  }
+  
+  /* Paragraph styles for both sides */
+  .left-side p, .right-side p {
+    font-size: 16px; /* Standard font size for body text */
+    margin-bottom: 18px; /* Consistent margin between paragraphs */
+    font-weight: 400; /* Normal font weight for paragraphs */
+  }
+  
+
+  .image-container {
+    text-align: center; /* Center align the image */
+    margin: 20px 0; /* Space around the image */
+  }
+  
+  .service-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 400px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  }

@@ -1,0 +1,183 @@
+/* General Layout */
+.essential-header {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+/* 
+.head-image {
+    background-color: #0056b3;
+    height: 100%;
+    width: 100%;
+} */
+
+.header-image {
+    width: 100%;
+    max-width: 800px;
+    height: 250px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Subcategories Header */
+.subcategory-header {
+    margin: 40px 0 20px;
+}
+
+.subcategory-header h2 {
+    font-size: 2.5rem;
+    color: #ff6347;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.subcategory-header h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #ff6347;
+    margin: 10px auto 0;
+    transition: width 0.4s ease;
+}
+
+.subcategory-header h2:hover::after {
+    width: 120px;
+}
+
+/* Subcategories */
+.subcategory-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.subcategory-list li {
+    display: inline-block;
+}
+
+.subcategory-list li a {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.subcategory-list li a:hover {
+    background-color: #0056b3;
+}
+
+/* Products List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Reduced gap between products */
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-item {
+    width: calc(25% - 30px); /* Adjusting width to make the products smaller */
+    max-width: 220px; /* Smaller maximum width */
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    padding: 15px;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 120px; /* Smaller image size */
+    object-fit: contain;
+}
+
+.product-item h3 {
+    font-size: 1rem; /* Smaller title */
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 0.9rem; /* Smaller description text */
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.product-item p.price {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.product-item p.mrp-price {
+    font-size: 0.9rem; /* Slightly smaller than customer price */
+    color: #999; /* Grey color for MRP price */
+    text-decoration: line-through; /* Adds the line through the text */
+
+    margin-bottom: 5px;
+}
+
+.product-item p.customer-price {
+    font-size: 1rem; /* Regular size for customer price */
+    color: #007bff; /* Highlight customer price */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* .product-item p.rating {
+    color: #ffcc00;
+} */
+
+.product-item p.sold-out {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px); /* On smaller screens, products take up more space */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 100%; /* Full width on very small screens */
+    }
+}

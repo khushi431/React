@@ -1,0 +1,169 @@
+{
+    "data": {
+        "id": 6,
+        "name": "ESSENTIALS",
+        "slug": "health-and-wellness",
+        "app_image": "https://media.nutristar.in/category/app/health-and-wellness-1673685396628924.jpeg",
+        "web_image": "https://media.nutristar.in/category/web/health-and-wellness-1673685157680636.jpeg",
+        "description": "<p>.</p>",
+        "c_type": 1,
+        "subcategoryList": [
+            {
+                "id": 6,
+                "name": "All",
+                "slug": "health-and-wellness"
+            },
+            {
+                "id": 21,
+                "slug": "multivitamins",
+                "name": "MULTIVITAMINS"
+            },
+            {
+                "id": 20,
+                "slug": "testosterone-booster",
+                "name": "T-BOOSTERS"
+            },
+            {
+                "id": 22,
+                "slug": "fish-oil",
+                "name": "FISH OIL"
+            },
+            {
+                "id": 23,
+                "slug": "others",
+                "name": "OTHER ESSENTIALS"
+            }
+        ],
+        "productcount": 154,
+        "products": [
+            {
+                "id": 93,
+                "name": "Now Foods - Omega-3 Fish Oil - 200 Softgels",
+                "size": "100 D Supply",
+                "slug": "now-foods-omega-3-fish-oil-200-softgels",
+                "rating": 5,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 2500,
+                "customer_price": 1795,
+                "display_image": "https://media.nutristar.in/product/stocks/now-foods-omega-3-fish-oil-200-softgels-unflavoured-167653581081731.png"
+            },
+            {
+                "id": 94,
+                "name": "NOW Foods - Omega-3 Fish Oil- 100 Softgels",
+                "size": "50Day Supply",
+                "slug": "now-foods-omega-3-fish-oil-100-softgels",
+                "rating": 4.8,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 1400,
+                "customer_price": 1095,
+                "display_image": "https://media.nutristar.in/product/stocks/now-foods-omega-3-fish-oil-100-softgels-unflavoured-167653608205551.png"
+            },
+            {
+                "id": 149,
+                "name": "Muscletech Platinum Omega Fish OIl , 100 Softgels",
+                "size": "100 D Supply",
+                "slug": "muscletech-platinum-fish-oil-100-softgels",
+                "rating": 5,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 1499,
+                "customer_price": 799,
+                "display_image": "https://media.nutristar.in/product/stocks/muscletech-platinum-fish-oil-100-softgels-unflavoured-166886205859359.png"
+            },
+            {
+                "id": 187,
+                "name": "GNC Body Fish Oil 1000 , 90 Softgels",
+                "size": "90Day Supply",
+                "slug": "gnc-body-fish-oil-1000-90-softgels",
+                "rating": 0,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 1299,
+                "customer_price": 645,
+                "display_image": "https://media.nutristar.in/product/stocks/gnc-body-fish-oil-1000-90-softgels-unflavoured-167517326858211.png"
+            },
+            {
+                "id": 228,
+                "name": "MuscleBlaze Fish Oil - 180 capsules, 1000 mg (180mg EPA and 120mg DHA)",
+                "size": "90Day Supply",
+                "slug": "muscleblaze-fish-oil-180-capsules-1000-mg-180mg-epa-and-120mg-dha",
+                "rating": 5,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 1449,
+                "customer_price": 999,
+                "display_image": "https://media.nutristar.in/product/stocks/muscleblaze-fish-oil-180-capsules-1000-mg-180mg-epa-and-120mg-dha-unflavoured-161786798501234.png"
+            },
+            {
+                "id": 230,
+                "name": "MuscleBlaze Fish Oil Gold 60 Capsules (with Higher Strength EPA & DHA )",
+                "size": "60Day Supply",
+                "slug": "muscleblaze-fish-oil-gold-60-capsules-with-higher-strength-epa-and-dha",
+                "rating": 4.2,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 1349,
+                "customer_price": 825,
+                "display_image": "https://media.nutristar.in/product/stocks/muscleblaze-fish-oil-gold-60-capsules-with-higher-strength-epa-and-dha-unflavoured-167661519888399.png"
+            },
+            {
+                "id": 812,
+                "name": "MuscleBlaze Biozyme Daily Multivitamin - 90 Tablets ( 30 Packs )",
+                "size": "30Day Supply",
+                "slug": "muscleblaze-biozyme-daily-multivitamin-90-tablets",
+                "rating": 4,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 1299,
+                "customer_price": 825,
+                "display_image": "https://media.nutristar.in/product/stocks/muscleblaze-biozyme-daily-multivitamin-90-tablets-unflavoured-167662843532657.png"
+            },
+            {
+                "id": 1066,
+                "name": "Kapiva Him Foods Shilajit Gold (Helps in Boosting Stamina) 60 Capsules ",
+                "size": "60Day Supply",
+                "slug": "kapiva-him-foods-shilajit-gold-helps-in-boosting-stamina-60-capsules",
+                "rating": 5,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 899,
+                "customer_price": 699,
+                "display_image": "https://media.nutristar.in/product/stocks/kapiva-him-foods-shilajit-gold-helps-in-boosting-stamina-60-capsules-unflavoured-172208190661750.jpeg"
+            },
+            {
+                "id": 846,
+                "name": "MuscleTech Platinum Multivitamin - 60 Tablets ",
+                "size": "60Day Supply",
+                "slug": "muscletech-platinum-multivitamin-60-tablets",
+                "rating": 3.4,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 1599,
+                "customer_price": 799,
+                "display_image": "https://media.nutristar.in/product/stocks/muscletech-platinum-multivitamin-60-tablets-unflavoured-167145108424340.png"
+            },
+            {
+                "id": 729,
+                "name": "MuscleBlaze Omega 3 Fish Oil, 1000 mg (180 mg EPA and 120 mg DHA) - 60 Softgels",
+                "size": "30Day Supply",
+                "slug": "muscleblaze-fish-oil-60-capsules-1000-mg-180-mg-epa-and-120-mg-dha",
+                "rating": 4,
+                "is_sold": false,
+                "is_favorite": 0,
+                "mrp_price": 679,
+                "customer_price": 449,
+                "display_image": "https://media.nutristar.in/product/stocks/muscleblaze-fish-oil-60-capsules-1000-mg-180-mg-epa-and-120-mg-dha-unflavoured-165432809581524.png"
+            }
+        ]
+    },
+    "meta": {
+        "code": 1,
+        "message": "Success.",
+        "per_page": 10,
+        "total": 154,
+        "page": 1,
+        "cart_count": 0
+    }
+}

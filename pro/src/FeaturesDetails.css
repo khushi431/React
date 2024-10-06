@@ -1,0 +1,22 @@
+/* FeatureDetail.css */
+.feature-detail-container {
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    max-width: 800px; /* Max width for content */
+    margin: 20px auto; /* Center the container */
+}
+
+.feature-detail-container h2 {
+    color: #007bff; /* Blue color for the title */
+}
+
+.feature-detail-container h3 {
+    margin-top: 20px; /* Space above subheadings */
+}
+
+.feature-detail-container ul {
+    list-style-type: disc; /* Disc for list items */
+    margin-left: 20px; /* Indent the list */
+}
